@@ -1,0 +1,1 @@
+These files are what users of `vibes` are intended to copy to their `vibes` directory when they are starting a project. When we change them, it's because we're updating them to be better for that purpose. They are NOT in use.

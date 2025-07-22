@@ -1,0 +1,1 @@
+These files are not part of the project's "source code". They are an active instance of the framework being used in ongoing development OF the framework. Since it is not part of the codebase, you should omit any mention of it in any documentation (codebase summary, work logs, etc.).

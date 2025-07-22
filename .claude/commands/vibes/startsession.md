@@ -39,5 +39,5 @@ Gather relevant information before starting work.
           `scratch/` folder. This script should have NO validation, error checking,
           usage info, etc. IT IS ONLY FOR YOU to test your approach.
     - Following steps will build toward achieving the full goal.
-- Prompt the user to begin work on the first step with the /plan command.
+- Prompt the user to begin work on the first step with the /task command.
 
