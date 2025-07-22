@@ -2,13 +2,10 @@
 
 ## Instructions
 
-1. Copy the `vibes` and `.claude` directories into the root of your repository.
+1. Run `vibes-deploy <repo root>` to install `vibes` in your repository.
 2. Run `claude` from your repository root and get to vibing.
 
 ## Note
 
-`vibes` is intended to be used from the start of project development.
-Initialization from an existing project is planned. It should be possible to
-get Claude to handle everything himself by writing an appropriate set of
-instructions.
+`vibes` is intended to be used from the start of project development. Installation into an existing codebase is planned.
 

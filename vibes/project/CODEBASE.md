@@ -41,3 +41,4 @@ A framework for structured development sessions with Claude Code, emphasizing fo
 - Claude Code with custom slash commands
 - Git for version control and session boundaries
 - Markdown for documentation and templates
+- `vibes-deploy` script for framework deployment to repositories

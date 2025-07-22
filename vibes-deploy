@@ -1,0 +1,56 @@
+#!/bin/bash
+
+set -e
+
+if [ $# -ne 1 ]; then
+    echo "Usage: vibes-deploy <target-repo-root>"
+    exit 1
+fi
+
+TARGET="$1"
+
+# Validate target is a directory
+if [ ! -d "$TARGET" ]; then
+    echo "Error: Target '$TARGET' is not a directory"
+    exit 1
+fi
+
+# Check if vibes or .claude/commands/vibes already exists
+if [ -d "$TARGET/vibes" ]; then
+    echo "Error: $TARGET/vibes already exists. Remove it first or choose a different target."
+    exit 1
+fi
+
+if [ -d "$TARGET/.claude/commands/vibes" ]; then
+    echo "Error: $TARGET/.claude/commands/vibes already exists. Remove it first or choose a different target."
+    exit 1
+fi
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+SOURCE_DIR="$SCRIPT_DIR/vibes.init"
+
+# Validate source directory exists
+if [ ! -d "$SOURCE_DIR" ]; then
+    echo "Error: Source directory '$SOURCE_DIR' not found"
+    exit 1
+fi
+
+echo "Deploying vibes to $TARGET..."
+
+# Copy vibes directory (excluding claudemd)
+echo "Copying vibes directory..."
+cp -r "$SOURCE_DIR/vibes" "$TARGET/"
+rm -f "$TARGET/vibes/claudemd"
+
+# Copy .claude directory
+echo "Copying .claude directory..."
+cp -r "$SOURCE_DIR/.claude" "$TARGET/"
+
+# Copy claudemd content to CLAUDE.md
+echo "Creating CLAUDE.md..."
+cp "$SOURCE_DIR/vibes/claudemd" "$TARGET/vibes/CLAUDE.md"
+
+echo "Vibes deployment complete!"
+echo "- vibes/ directory created at $TARGET/vibes"
+echo "- Claude commands installed at $TARGET/.claude/commands/vibes"
+echo "- CLAUDE.md created at $TARGET/vibes/CLAUDE.md"
