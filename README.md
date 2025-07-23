@@ -35,7 +35,7 @@ Forcing Claude to be very specific about his plan for a group of edits *before* 
 
 ## Installation
 
-1. From this repo's root, run `vibes-deploy <your repo root>` to install `vibes` in your repository.
+1. Run `install <your repo root>` to install `vibes` in your repository.
 2. Change to your repo root and run `claude`, then run these commands:
     - `/vibes:initialize` to have Claude analyze your codebase and save a summary to `vibes/project/CODEBASE.md`.
     - `/vibes:build-worklog` to have Claude analyze a portion of your `git log` and create an initial `vibes/worklogs/WORKLOG.md`.
