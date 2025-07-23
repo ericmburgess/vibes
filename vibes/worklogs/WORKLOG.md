@@ -1,3 +1,10 @@
+# Development Session #0007 (2025-07-23): Improve installation and source templates
+
+## Tasks completed
+
+✅ Improve installation script
+✅ Update source template files
+
 # Development Session #0006 (2025-07-23): Extract commit message format instructions
 
 ## Tasks completed
