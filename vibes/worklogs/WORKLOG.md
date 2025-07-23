@@ -1,3 +1,14 @@
+# Development Session #0006 (2025-07-23): Extract commit message format instructions
+
+## Tasks completed
+
+✅ Extract duplicated commit message instructions into `vibes/instructions/git-commit-message-format.md`
+✅ Update endsession and log-my-work commands to reference the new instruction file
+
+## Outcome
+
+Eliminated duplication by centralizing commit message format requirements. Added explicit override notice that vibes format supersedes Claude's system prompt behavior.
+
 # Development Session #0005 (2025-07-23): Add vibes:log-my-work command
 
 ## Tasks completed

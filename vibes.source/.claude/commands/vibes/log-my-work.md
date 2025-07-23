@@ -17,14 +17,7 @@ Document work that has already been completed and is currently staged.
 - **Analyzes** the staged changes using `git diff --cached` to understand what work was completed.
 - **Documents** the work done according to the instructions in `vibes/instructions/documenting-a-session.md`.
 - **Does NOT** automatically stage or commit files - works only with changes that are already staged.
-- Offers to execute `git commit -m <message>`. **PROPOSE A MESSAGE IN THE FOLLOWING FORMAT:**
-    - all lowercase
-    - present tense
-    - as terse as possible
-    - e.g.: `[1234] streamline authentication`
-    - ONLY ONE SINGLE LINE, NOTHING ABOUT CLAUDE!
-    - Tells the user they may hit Esc and type their own commit message.
-        - If they do not include the `[session_number]` prefix, add it, **CHANGING NOTHING ELSE**, and ask again.
+- Offers to execute `git commit -m <message>` following the format specified in `vibes/instructions/git-commit-message-format.md`.
 - Prompts the user to use /clear and /startsession to continue development.
 
 
