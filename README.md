@@ -37,7 +37,7 @@ Forcing Claude to be very specific about his plan for a group of edits *before* 
 
 1. From this repo's root, run `vibes-deploy <your repo root>` to install `vibes` in your repository.
 2. Change to your repo root and run `claude`, then run these commands:
-    - `/vibes:init-existing` to have Claude analyze your codebase and save a summary to `vibes/project/CODEBASE.md`.
+    - `/vibes:initialize` to have Claude analyze your codebase and save a summary to `vibes/project/CODEBASE.md`.
     - `/vibes:build-worklog` to have Claude analyze a portion of your `git log` and create an initial `vibes/worklogs/WORKLOG.md`.
 3. Review what Claude produced, and revise it as necessary.
 4. Open Claude again, and run these commands:
@@ -55,4 +55,4 @@ Take EXTRA care if you're working with any sensitive information. Claude is pron
 
 ## Dogfooding!
 
-The "source code" is in the `vibes.init/` folder. The `vibes/` and `.claude/` folders in the root of *this* repo are the ones that `vibes` installs and maintains when you use it in your project. That's because I'm using `vibes` while developing `vibes`. Explaining this to Claude so that he reliably understands was a fun exercise.
+The "source code" is in the `vibes.source/` folder. The `vibes/` and `.claude/` folders in the root of *this* repo are the ones that `vibes` installs and maintains when you use it in your project. That's because I'm using `vibes` while developing `vibes`. Explaining this to Claude so that he reliably understands was a fun exercise.

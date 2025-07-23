@@ -18,9 +18,9 @@ A framework for structured development sessions with Claude Code, emphasizing fo
     - `task.md` - Plan and execute focused work units
     - `endsession.md` - Document completed work and commit changes
     - `help.md` - Display framework usage instructions
-    - `init-existing.md` - Initialize vibes in existing projects
+    - `initialize.md` - Initialize vibes in existing projects
     - `build-change-history.md` - Generate worklog from git history
-- `vibes.init/` - Template files for new projects using the framework
+- `vibes.source/` - Template files for new projects using the framework
     - `vibes/instructions/` - Documentation templates and guidelines
         - `documenting-a-session.md` - Session logging format and requirements
         - `summarizing-the-codebase.md` - Codebase documentation guidelines

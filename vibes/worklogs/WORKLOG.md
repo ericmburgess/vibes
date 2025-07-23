@@ -1,3 +1,22 @@
+# Development Session #0004 (2025-07-23): Improve directory and command naming clarity
+
+## Tasks completed
+
+✅ Rename vibes.init to vibes.source
+✅ Rename init-existing command to initialize  
+✅ Improve codebase summarization template
+
+## Outcome
+
+The naming improvements were fully accomplished:
+
+- **Clearer directory structure**: `vibes.source/` clearly indicates the purpose as source templates
+- **Consistent command naming**: `/vibes:initialize` is more intuitive than `/vibes:init-existing`
+- **Better documentation**: Enhanced template provides clearer guidance for codebase documentation
+- **Updated references**: All file paths and command references updated consistently across the framework
+
+The framework now has more intuitive naming that better communicates the purpose of each component.
+
 # Development Session #0003 (2025-07-23): Support installation into existing codebase
 
 ## Tasks completed

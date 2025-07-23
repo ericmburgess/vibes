@@ -5,7 +5,7 @@ Analyze an existing codebase and generate initial `CODEBASE.md` documentation.
 ## Usage
 
 ```
-/vibes:init-existing
+/vibes:initialize
 ```
 
 ## What it does
@@ -25,4 +25,4 @@ Analyze an existing codebase and generate initial `CODEBASE.md` documentation.
 
 ## Notes
 
-This is meant to be run once after deploying vibes to create the initial project documentation. Focus on documenting what exists rather than making assumptions about what should exist.
+This is meant to be run once after installing vibes to create the initial project documentation. Focus on documenting what exists rather than making assumptions about what should exist.

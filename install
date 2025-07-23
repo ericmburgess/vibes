@@ -3,7 +3,7 @@
 set -e
 
 if [ $# -ne 1 ]; then
-    echo "Usage: vibes-deploy <target-repo-root>"
+    echo "Usage: install <target-repo-root>"
     exit 1
 fi
 
@@ -27,7 +27,7 @@ if [ -d "$TARGET/.claude/commands/vibes" ]; then
 fi
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-SOURCE_DIR="$SCRIPT_DIR/vibes.init"
+SOURCE_DIR="$SCRIPT_DIR/vibes.source"
 
 # Validate source directory exists
 if [ ! -d "$SOURCE_DIR" ]; then
@@ -35,7 +35,7 @@ if [ ! -d "$SOURCE_DIR" ]; then
     exit 1
 fi
 
-echo "Deploying vibes to $TARGET..."
+echo "Installing vibes to project at $TARGET..."
 
 # Copy vibes directory (excluding claudemd)
 echo "Copying vibes directory..."
@@ -50,7 +50,7 @@ cp -r "$SOURCE_DIR/.claude" "$TARGET/"
 echo "Creating CLAUDE.md..."
 cp "$SOURCE_DIR/vibes/claudemd" "$TARGET/vibes/CLAUDE.md"
 
-echo "Vibes deployment complete!"
+echo "Vibes installation complete!"
 echo "- vibes/ directory created at $TARGET/vibes"
 echo "- Claude commands installed at $TARGET/.claude/commands/vibes"
 echo "- CLAUDE.md created at $TARGET/vibes/CLAUDE.md"

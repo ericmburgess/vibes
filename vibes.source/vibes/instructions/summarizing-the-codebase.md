@@ -1,4 +1,13 @@
-- The purpose of the codebase document is for YOU to orient YOURSELF at the
+# INSTRUCTIONS FOR CREATING AN INITIAL CODEBASE SUMMARY
+
+- **DO NOT LEAVE THIS SECTION IN THE SUMMARY YOU ARE CREATING**
+- DO NOT SPECULATE. If you cannot CLEARLY SEE relevant information for a section, then LEAVE IT EMPTY.
+- You may ask the user clarifying questions, but not many. Prompt the user to review the document after creating it from this sample.
+- **DO LEAVE** the "INSTRUCTIONS FOR CLAUDE" section in the summary you're making.
+
+# INSTRUCTIONS FOR CLAUDE
+
+- The purpose of this codebase summary is for YOU to orient YOURSELF at the
   start of each coding session.
 - It is NOT intended to be comprehensive. It's just a high-level ROADMAP.
 - KEEP THIS DOCUMENT VERY LEAN! You're going to be revising it at the end of
@@ -6,7 +15,7 @@
   function signature or add a class method!
 
 # Sample Project Codebase Summary
-
+  
 ## Project Overview
 
 (Very brief explanation of the project's purpose; no design or implementation details)
@@ -40,11 +49,12 @@ High-level principles that must be maintained during development, e.g.,
 
 Example:
 
+- Python 3.13
 - `uv` for dependency, virtual environment, and build management
 - Linters
-    - ruff
-    - isort
-    - mypy
+    - `ruff`
+    - `isort`
+    - `mypy`
 
 ## Coding standards
 
@@ -54,4 +64,3 @@ Example:
     - Do not use `List`, `Dict`, etc. when `list` and `dict` are now valid.
     - `<type> | None`, not `Optional[<type>]`.
 - CamelCase for classes, even with acronyms, e.g. `ApiEndpointUrl`, not `APIEndpointURL`.
-
