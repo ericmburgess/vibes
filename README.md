@@ -1,5 +1,9 @@
 # `vibes` - Vibe coding for developers
 
+## This is a relic
+
+Claude Code and other harnesses do all of this, and much more, and much better now. This was a weird little moment in time.
+
 `vibes` is intended to avoid the worst pitfalls of vibe coding, without taking all the fun out of it. It's aimed at professional developers, and may not provide a good experience for non-programmers. (Though this has not been tested!)
 
 The intent is to give you a good chance to catch Claude's mistakes before it's too late, while still having him do most of the work for you.
